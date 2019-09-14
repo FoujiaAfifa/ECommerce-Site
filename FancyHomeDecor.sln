@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyHomeDecor", "FancyHomeDecor\FancyHomeDecor.csproj", "{7A24E3D4-171D-43B1-BB3C-34E9DE43995B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyHomeDecor.Models", "FancyHomeDecor.Models\FancyHomeDecor.Models.csproj", "{5E331424-333C-421F-8681-A6D0F123EFF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyHomeDecor.Repository", "FancyHomeDecor.Repository\FancyHomeDecor.Repository.csproj", "{82F730C2-EAE5-4B20-BE3E-AC87574E0E32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyHomeDecor.Manager", "FancyHomeDecor.Manager\FancyHomeDecor.Manager.csproj", "{019695EA-3846-4D4F-89CE-AFDCDB9E2A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FancyHomeDecor.DatabaseContext", "FancyHomeDecor.DatabaseContext\FancyHomeDecor.DatabaseContext.csproj", "{8B9CCD85-2429-467C-A51F-981180D6977B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{7A24E3D4-171D-43B1-BB3C-34E9DE43995B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A24E3D4-171D-43B1-BB3C-34E9DE43995B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A24E3D4-171D-43B1-BB3C-34E9DE43995B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E331424-333C-421F-8681-A6D0F123EFF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E331424-333C-421F-8681-A6D0F123EFF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E331424-333C-421F-8681-A6D0F123EFF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E331424-333C-421F-8681-A6D0F123EFF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F730C2-EAE5-4B20-BE3E-AC87574E0E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F730C2-EAE5-4B20-BE3E-AC87574E0E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F730C2-EAE5-4B20-BE3E-AC87574E0E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F730C2-EAE5-4B20-BE3E-AC87574E0E32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019695EA-3846-4D4F-89CE-AFDCDB9E2A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019695EA-3846-4D4F-89CE-AFDCDB9E2A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019695EA-3846-4D4F-89CE-AFDCDB9E2A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019695EA-3846-4D4F-89CE-AFDCDB9E2A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B9CCD85-2429-467C-A51F-981180D6977B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9CCD85-2429-467C-A51F-981180D6977B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9CCD85-2429-467C-A51F-981180D6977B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9CCD85-2429-467C-A51F-981180D6977B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
