@@ -1,31 +1,506 @@
-﻿@{
+﻿@model FancyHomeDecor.Models.ViewModels.HomeViewModel
+@{
     ViewBag.Title = "Home Page";
+
+    var firstCategory = Model.Categories.First();
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<section id="main-container" class="main-container">
+    <div class="ts-categories-grid grid-masonry wow fadeInUp" data-wow-delay="0.8s" data-layoutmode="packery">
+        <div class="item-category grid grid-2x">
+            <figure><img src="@firstCategory.ImageURL" alt=""></figure>
+            <div class="category-info">
+                <h4><a href="#">@firstCategory.Name</a></h4>
+                <p>@firstCategory.Description</p>
+            </div>
+        </div>
+        <div class="item-category grid">
+            <figure><img src="~/Content/images/920x933.png" alt=""></figure>
+            <div class="category-info">
+                <h4><a href="#">Furniture</a></h4>
+                <p>Monotonectally recaptiualize leading-edge</p>
+            </div>
+        </div>
+        <div class="item-category grid">
+            <figure><img src="~/Content/images/920x933.png" alt=""></figure>
+            <div class="category-info">
+                <h4><a href="#">Accessory</a></h4>
+                <p>Monotonectally recaptiualize leading-edge</p>
+            </div>
+        </div>
+        <div class="item-category grid">
+            <figure><img src="~/Content/images/920x933.png" alt=""></figure>
+            <div class="category-info">
+                <h4><a href="#">Decoration</a></h4>
+                <p>Monotonectally recaptiualize leading-edge</p>
+            </div>
+        </div>
+        <div class="item-category grid">
+            <figure><img src="~/Content/images/920x933.png" alt=""></figure>
+            <div class="category-info">
+                <h4><a href="#">Trees decoration</a></h4>
+                <p>Monotonectally recaptiualize leading-edge</p>
+            </div>
+        </div>
+    </div>
+    <div class="section-service">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="ts-service bg1">
+                    <span class="icon icon-basic-lock"></span>
+                    <h4>Buy with confidence 100%</h4>
+                    <p>Safe &amp; Secure payments.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="ts-service bg2">
+                    <span class="icon icon-basic-mixer2"></span>
+                    <h4>Quality delivery service</h4>
+                    <p>Hourly time slots for deliveries.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="ts-service bg3">
+                    <span class="icon icon-basic-paperplane"></span>
+                    <h4>Free shipping</h4>
+                    <p>On all oder $100</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="ts-service bg2">
+                    <span class="icon icon-basic-info"></span>
+                    <h4>Call us : (855) 355-2875 </h4>
+                    <p>Hourly time slots for deliveries.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products products-grid-no-margin">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <span class="onsale">Sale</span>
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <span class="onsale">Sale</span>
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 product">
+                <div class="product-innercotent">
+                    <span class="onsale">Sale</span>
+                    <a href="#">
+                        <figure><img src="~/Content/images/460x467.png" alt=""></figure>
+                    </a>
+                    <div class="info-product">
+                        <h3 class="title-product"><a href="#">Manami by takumikohgei</a></h3>
+                        <span class="price-product">$103.00</span>
+                        <a class="ts-viewdetail" href="#"><span class="icon icon-arrows-slim-right"></span></a>
+                    </div>
+                    <div class="ts-product-button">
+                        <div class="yith-wcwl-add-to-wishlist">
+                            <div class="yith-wcwl-add-button show" style="display:block">
+                                <a href="#" rel="nofollow" class="add_to_wishlist">Add to Wishlist</a>
+                                <img src="" class="ajax-loading" alt="loading" width="16" height="16" style="visibility:hidden" />
+                            </div>
+                            <div class="yith-wcwl-wishlistaddedbrowse hide" style="display:none;">
+                                <span class="feedback">Product added!</span>
+                                <a href="">Browse Wishlist</a>
+                            </div>
+
+                            <div class="yith-wcwl-wishlistexistsbrowse hide" style="display:none">
+                                <span class="feedback">The product is already in the wishlist!</span>
+                                <a href="#">Browse Wishlist</a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <div class="yith-wcwl-wishlistaddresponse"></div>
+                        </div>
+                        <a href="#" class="button yith-wcqv-button">Quick View</a>
+                        <a href="#" class="btn-add-to-cart button add_to_cart_button product_type_simple">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="section-feature-2">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="ts-feature feature-icon wow fadeInUp" data-wow-delay="0.4s">
+                    <figure><img alt="" src="~/Content/images/920x382.png"></figure>
+                    <div class="info-feature">
+                        <span class="icon icon-basic-sheet-pen"></span>
+                        <h4>Blog &amp; Ideas</h4>
+                        <p>Discover even more...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ts-feature feature-icon wow fadeInUp" data-wow-delay="0.4s">
+                    <figure><img alt="" src="~/Content/images/920x382.png"></figure>
+                    <div class="info-feature">
+                        <span class="icon icon-basic-question"></span>
+                        <h4>Faqs</h4>
+                        <p>Discover even more...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+</section>

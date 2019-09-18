@@ -41,10 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BAL\ProductManager.cs" />
+    <Compile Include="BAL\CategoryManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BAL\" />
+    <ProjectReference Include="..\FancyHomeDecor.Models\FancyHomeDecor.Models.csproj">
+      <Project>{5E331424-333C-421F-8681-A6D0F123EFF1}</Project>
+      <Name>FancyHomeDecor.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FancyHomeDecor.Repository\FancyHomeDecor.Repository.csproj">
+      <Project>{82F730C2-EAE5-4B20-BE3E-AC87574E0E32}</Project>
+      <Name>FancyHomeDecor.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

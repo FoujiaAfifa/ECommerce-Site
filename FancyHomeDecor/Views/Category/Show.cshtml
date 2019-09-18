@@ -1,0 +1,13 @@
+﻿@model List<FancyHomeDecor.Models.Models.Category>
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Show Categories</h2>
+
+@foreach (var category in Model)
+{
+<h1> @category.Name   </h1>
+<h1> @category.Description   </h1>
+}

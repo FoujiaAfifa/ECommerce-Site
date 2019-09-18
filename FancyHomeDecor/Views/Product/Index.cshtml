@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+    <h2>Search Product</h2>
+    <form method="post">
+        <input name="Search" id="searchVal" />
+
+        <button type="button" id="searchBtn">Search</button>
+    </form>
+    <br />
+    <button type="button" id="newBtn">Create New Product</button>
+
+</div>
+
+
+@{
+    Html.RenderAction("Show");
+    
+}
+
+
+
+
+
